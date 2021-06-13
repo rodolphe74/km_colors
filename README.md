@@ -8,6 +8,7 @@ Use [k-mean](https://github.com/ogus/kmeans-quantizer) algorithm to find a 8 col
 - Il s'agit d'un programme en C utilisant la librairie SDL pour l'affichage et l'animation.
 - Les couleurs sont affichées en nuage de points à l'intérieur d'un cube. La coordonnée 3D d'un point correspond a la nuance (sur 256) de chaque composante RVB d'une couleur.
 - Les 8 couleurs resultantes de la quantification sont encerclées.
+- Les touches + et - permettent de changer les étapes de l'algorithme kmean.
 - Le programme prend 2 arguments:
   - Le chemin de la jpeg
   - Le seuil de fréquence d'une couleur en dessous de laquelle la couleur n'est pas affichée dans le cube (par défaut 20).
