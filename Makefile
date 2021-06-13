@@ -30,7 +30,7 @@ AR2= ranlib
 
 all: km_colors
 
-km_colors: log.o mathc.o 3d.o linkedlist.o jpeg.o pixel.o kmean.o ./jpeg-6b/libjpeg.a km_colors.c
+km_colors: log.o mathc.o 3d.o jpeg.o pixel.o kmean.o ./jpeg-6b/libjpeg.a km_colors.c
 	$(CC) $(CFLAGS) $^ -o $@ $(LDFLAGS)
 
 
@@ -41,9 +41,6 @@ log.o: log.c
 	$(CC) $(CFLAGS) -c -o $@ $<
 
 mathc.o: mathc.c
-	$(CC) $(CFLAGS) -c -o $@ $<
-
-linkedlist.o: linkedlist.c
 	$(CC) $(CFLAGS) -c -o $@ $<
 
 jpeg.o: jpeg.c
